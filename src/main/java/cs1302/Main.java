@@ -1,6 +1,6 @@
 package cs1302;
 
-import cs1302.ui.MainView;
+import cs1302.ui.WeatherView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -9,8 +9,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Search Dogs & Cat Animal Breed");
-        primaryStage.setScene(new Scene(new MainView(), 600, 500));
+        primaryStage.setTitle("Search Weather!!!");
+        primaryStage.setScene(new Scene(new WeatherView().init(), 600, 500));
         primaryStage.show();
     }
 
